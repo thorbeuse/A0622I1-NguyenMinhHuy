@@ -11,12 +11,12 @@
 <br>
 <label>Diện tích hình tròn</label>
 <p id="dienTich"></p>
-<button onclick="tinhS">Tính</button>
+<button onclick="tinhS()">Tính</button>
 <script>
     function tinhS() {
         r = document.getElementById('banKinh').value;
-        dienTich = parseInt(r)*3.14;
-        document.getElementById('dienTich').innerHTML = dienTich
+        dienTich = parseInt(r) * parseInt(r) * 3.14;
+        document.getElementById("dienTich").innerHTML = dienTich
 
     }
 </script>
